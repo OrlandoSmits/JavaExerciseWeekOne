@@ -3,6 +3,8 @@
     
     <properties>
         <spring-boot.version>2.7.5</spring-boot.version>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
     </properties>
     <groupId>com.ing</groupId>
     <version>1.0</version>
