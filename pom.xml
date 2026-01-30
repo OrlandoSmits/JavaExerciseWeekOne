@@ -2,9 +2,9 @@
     <artifactId>java-exercise-week-one</artifactId>
     
     <properties>
-        <spring-boot.version>2.7.5</spring-boot.version>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <spring-boot.version>4.0.2</spring-boot.version>
+        <maven.compiler.source>25</maven.compiler.source>
+        <maven.compiler.target>25</maven.compiler.target>
     </properties>
     <groupId>com.ing</groupId>
     <version>1.0</version>
