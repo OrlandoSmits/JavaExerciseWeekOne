@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
  * This is a test class. Within this class we write methods to verify that are methods work as intended.
  * As you can see there are some methods that not work. The goal is to make sure that all these tests are succeeding.
  * As an extra assignment you can try to write a valid test case for the last method.
- * In IntelliJ you can use CTRL+Shift+F10, or click the run test symbol to run all the tests in this class.
+ * In IntelliJ, you can use CTRL+Shift+F10, or click the run test symbol to run all the tests in this class.
  */
 class BookServiceTest {
 
@@ -37,7 +37,7 @@ class BookServiceTest {
     void findBookByISBN() {
         Book book = insertOneBook();
 
-        Book bookByISBN = bookService.findBookByISBN(book.getISBN());
+        Book bookByISBN = bookService.findBookByISBN(book.getIsbn());
 
         assertNotNull(bookByISBN);
     }
@@ -47,7 +47,7 @@ class BookServiceTest {
         Book bookOne = this.insertOneBook();
         Book bookTwo = this.insertOneBook();
 
-        bookService.deleteBook(bookOne.getISBN());
+        bookService.deleteBook(bookOne.getIsbn());
         List<Book> allBooks = bookService.getAllBooks();
 
         assertEquals(allBooks.size(), 1);
